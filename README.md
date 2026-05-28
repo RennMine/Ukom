@@ -34,7 +34,7 @@
         VLAN ID 1,10,20,30</li>
     </ol>
       	
-5.	menu vlans;
+7. menu vlans;
 
 
  
@@ -65,7 +65,7 @@
         <li>Finish, Tunggu hingga Task Ok</li>
     </ol>
         
- 10. Install Apache, MySql, PHP
+9.  Install Apache, MySql, PHP
     1.	Masuk ke Ubuntu yang sudah dibuat
     2.	klik Start lalu console
 
