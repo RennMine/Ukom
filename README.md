@@ -103,7 +103,7 @@
       wgt https://wordpress.org/latest.tar.gz  
 
     # Extract WP
-      tar -xzvf latesttar.gz  
+      tar -xzvf latest.tar.gz  
 
     # Memindahkan Folder  
       sudo mv wordpress /var/www/html/  
