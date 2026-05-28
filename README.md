@@ -66,11 +66,16 @@
     password : (password yang sudah dibuat)
 
   	# Update Sistem & Install Apache, MySqlServer, PHPMyAdmin
-<blockquote>apt update</blockquote>
-   apt install apache2  
-   apt install mysql-server  
-   apt install php  
-   apt install phpMyAdmin
+<dd>
+
+    
+apt update
+apt install apache2  
+apt install mysql-server  
+apt install php  
+apt install phpMyAdmin
+
+</dd>
 
 10.	Konfigurasi Database MySQL  Masuk ke konsol MySQL dan
     buat database serta pengguna baru untuk WordPress.  
