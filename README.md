@@ -52,19 +52,20 @@
     </ol>
 
 8.	Konfigurasi Ubuntu Server di Proxmox
-    1.	Klik menu Create CT
-    2.	isi host name=nama, dan password & confirm password
-        next
-    4.	Template pilih Ubuntu-22.04-standar next
-    5.	Disk Size=24 next
-    6.	CPU biarkan 1 next
-    7.	Memory Size=2048, Swap= 2048 next
-    8.	Network isi IP 192.168.10.x/24 bebas selain 1 dan
-        254, Gateway= 192.168.10.1 next
-    9.	DNS Server= 8.8.8.8 next
-    10.	Finish, Tunggu hingga Task Ok
+    <ol type="1">
+        <li>Klik menu Create CT</li>
+        <li>isi host name=nama, dan password & confirm password, next</li>
+        <li>Template pilih Ubuntu-22.04-standar, next</li>
+        <li>Disk Size=24, next</li>
+        <li>CPU biarkan 1, next</li>
+        <li>Memory Size=2048, Swap= 2048, next</li>
+        <li>Network isi IP 192.168.10.x/24 bebas selain 1 dan
+        254, Gateway= 192.168.10.1, next</li>
+        <li>DNS Server= 8.8.8.8, next</li>
+        <li>Finish, Tunggu hingga Task Ok</li>
+    </ol>
         
- 9. Install Apache, MySql, PHP
+ 10. Install Apache, MySql, PHP
     1.	Masuk ke Ubuntu yang sudah dibuat
     2.	klik Start lalu console
 
