@@ -56,13 +56,14 @@
         <li>DNS Server= 8.8.8.8, next</li>
         <li>Finish, Tunggu hingga Task Ok</li>
     </ol>
+    
 **9. Install Apache, MySql, PHP**
     <ol type="1">
         <li>Masuk ke Ubuntu yang sudah dibuat</li>
-        <li>klik Start lalu console</li>
-    </ol>
-    <dd>login : root</dd>
-    <dd>password : (password yang sudah dibuat)</dd>
+        <li>klik Start lalu console</li>  
+* Login: root
+* Password: (Password yang sudah dibuat)
+        </ol>
     
     # Update Sistem & Install Apache, MySqlServer, PHPMyAdmin  
       apt update  
@@ -103,8 +104,8 @@
    	  chmod -R 755 /var/www/html/wordpress  
 
     # Masuk ke wordpress
-      Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/  
-      Lanjutkan installasi sampai bisa posting
+  Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/  
+  Lanjutkan installasi sampai bisa posting
 
 **%#&&$?&#_@?$**
 
