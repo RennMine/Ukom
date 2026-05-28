@@ -93,7 +93,7 @@
   	exit 
 
     # Install & Konfigurasi WordPress
-    cd /tmp
+    cd /tmp  
    	wgt https://wordpress.org/latest.tar.gz 
 
     # Extract WP
@@ -103,7 +103,8 @@
     sudo mv wordpress /var/www/html/ 
 
     # Merubah kepemilikan
-    Chown -R www-data:www-data /var/www/html/wordpress/          Chmod -R 755 /var/www/html/wordpress
+    Chown -R www-data:www-data /var/www/html/wordpress/  
+   	Chmod -R 755 /var/www/html/wordpress
 
 
 12.	Masuk ke wordpress
