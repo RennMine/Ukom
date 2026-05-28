@@ -65,9 +65,7 @@
     login : root
     password : (password yang sudah dibuat)
 
-    3.	Update Sistem & Install Apache, MySqlServer,
-        PHPMyAdmin
-    bash
+    # Update Sistem & Install Apache, MySqlServer, PHPMyAdmin
     apt update
     apt install apache2
     apt install mysql-server
@@ -76,20 +74,30 @@
 
 9.	Konfigurasi Database MySQL  Masuk ke konsol MySQL dan
     buat database serta pengguna baru untuk WordPress.  
-    1.	Masuk ke MySQL: sudo mysql -u root -p
-    2.	Buat Database: CREATE DATABASE wordpress;
-    3.	Buat User: CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
-    4.	Berikan Hak Akses: GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost';
-    5.	Refresh Hak Akses: FLUSH PRIVILEGES;
-    6.	Keluar: exit 
+    # Masuk ke MySQL
+  	sudo mysql -u root -p
+  	
+    # Buat Database
+  	CREATE DATABASE wordpress;
+  	
+    # Buat User
+  	CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+  	
+    # Berikan Hak Akses
+  	GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost';
+  	
+    # Refresh Hak Akses
+  	FLUSH PRIVILEGES;
+  	
+    # Keluar
+  	exit 
 
-10.	Install & Konfigurasi WordPress
-    bash
+    # Install & Konfigurasi WordPress
     cd /tmp 
     wget https://wordpress.org/latest.tar.gz 
 
     # Extract WP
-    tar -xzvf latest.tar.gz 
+    tar -xzvf latesttar.gz 
 
     # Memindahkan Folder
     sudo mv wordpress /var/www/html/ 
