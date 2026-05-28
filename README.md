@@ -32,6 +32,7 @@
         <li>masuk SWOS jika tidak masuk pindahkan ip ether 2 ke vlan 1</li>  
         <li>menu vlan > VLAN Mode enable port 1 - 4, Default
         VLAN ID 1,10,20,30</li>
+    </ol>
       	
 5.	menu vlans;
 
@@ -43,12 +44,14 @@
 
 
 6.	Konfigurasi Proxmox
-    1.	ketik di tab baru browser IP Proxmox
-    2.	ketik 192.168.10.2:8006
-    3.	masuk ke proxmox
-    4.	login.....
+    <ol type="1">
+        <li>ketik di tab baru browser IP Proxmox</li>
+        <li>ketik 192.168.10.2:8006</li>
+        <li>masuk ke proxmox</li>
+        <li>login.....</li>
+    </ol>
 
-7.	Konfigurasi Ubuntu Server di Proxmox
+8.	Konfigurasi Ubuntu Server di Proxmox
     1.	Klik menu Create CT
     2.	isi host name=nama, dan password & confirm password
         next
@@ -61,7 +64,7 @@
     9.	DNS Server= 8.8.8.8 next
     10.	Finish, Tunggu hingga Task Ok
         
- 8. Install Apache, MySql, PHP
+ 9. Install Apache, MySql, PHP
     1.	Masuk ke Ubuntu yang sudah dibuat
     2.	klik Start lalu console
 
