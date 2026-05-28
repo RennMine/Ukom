@@ -84,38 +84,37 @@
     # Masuk ke MySQL
       sudo mysql -u root -p  
   	
-# Buat Database
-  CREATE DATABASE wordpress;  
+    # Buat Database
+      CREATE DATABASE wordpress;  
   	
-# Buat User
-  CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';  
+    # Buat User
+      CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';  
   	
-# Berikan Hak Akses
-  GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost';  
-# Refresh Hak Akses
-  FLUSH PRIVILEGES;
+    # Berikan Hak Akses
+      GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost';  
+    # Refresh Hak Akses
+      FLUSH PRIVILEGES;
   	
-# Keluar
-  exit 
+    # Keluar
+      exit 
 
-# Install & Konfigurasi WordPress
-cd /tmp  
-wgt https://wordpress.org/latest.tar.gz 
+    # Install & Konfigurasi WordPress  
+      cd /tmp  
+      wgt https://wordpress.org/latest.tar.gz  
 
     # Extract WP
-    tar -xzvf latesttar.gz 
+      tar -xzvf latesttar.gz  
 
-    # Memindahkan Folder
-    sudo mv wordpress /var/www/html/ 
+    # Memindahkan Folder  
+      sudo mv wordpress /var/www/html/  
 
-    # Merubah kepemilikan
-    Chown -R www-data:www-data /var/www/html/wordpress/  
-   	Chmod -R 755 /var/www/html/wordpress
-
+    # Merubah kepemilikan  
+      Chown -R www-data:www-data /var/www/html/wordpress/  
+   	  Chmod -R 755 /var/www/html/wordpress  
 
     # Masuk ke wordpress
-    Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/
-    Lanjutkan installasi sampai bisa posting
+      Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/  
+      Lanjutkan installasi sampai bisa posting
 
 9#_X$@_!0*&%~?
 
