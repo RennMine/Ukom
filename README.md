@@ -66,9 +66,10 @@
     </ol>
         
 9.  Install Apache, MySql, PHP
-    1.	Masuk ke Ubuntu yang sudah dibuat
-    2.	klik Start lalu console
-
+    <ol type="1">
+        <li>Masuk ke Ubuntu yang sudah dibuat</li>
+        <li>klik Start lalu console</li>
+   
     login : root
     password : (password yang sudah dibuat)
 
