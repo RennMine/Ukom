@@ -65,12 +65,12 @@
     login : root
     password : (password yang sudah dibuat)
 
-    # Update Sistem & Install Apache, MySqlServer, PHPMyAdmin
-    apt update
-  	apt install apache2
-  	apt install mysql-server
-  	apt install php
-  	apt install phpMyAdmin 
+# Update Sistem & Install Apache, MySqlServer, PHPMyAdmin
+apt update
+apt install apache2
+apt install mysql-server
+apt install php
+apt install phpMyAdmin 
 
 10.	Konfigurasi Database MySQL  Masuk ke konsol MySQL dan
     buat database serta pengguna baru untuk WordPress.  
@@ -94,7 +94,7 @@
 
     # Install & Konfigurasi WordPress
     cd /tmp
-   	wget https://wordpress.org/latest.tar.gz 
+   	wgt https://wordpress.org/latest.tar.gz 
 
     # Extract WP
     tar -xzvf latesttar.gz 
@@ -103,8 +103,7 @@
     sudo mv wordpress /var/www/html/ 
 
     # Merubah kepemilikan
-    Chown -R www-data:www-data /var/www/html/wordpress/
-    Chmod -R 755 /var/www/html/wordpress
+    Chown -R www-data:www-data /var/www/html/wordpress/          Chmod -R 755 /var/www/html/wordpress
 
 
 12.	Masuk ke wordpress
