@@ -74,34 +74,33 @@
     <dd>password : (password yang sudah dibuat)</dd>
     </ol>
 
-# Update Sistem & Install Apache, MySqlServer, PHPMyAdmin
-apt update  
-apt install apache2  
-apt install mysql-server  
-apt install php  
-apt install phpMyAdmin  
+# Update Sistem & Install Apache, MySqlServer, PHPMyAdmin  
+  apt update  
+  apt install apache2  
+  apt install mysql-server  
+  apt install php  
+  apt install phpMyAdmin  
 
 # Masuk ke MySQL
-  	sudo mysql -u root -p  
+  sudo mysql -u root -p  
   	
-    # Buat Database
-  	CREATE DATABASE wordpress;  
+# Buat Database
+  CREATE DATABASE wordpress;  
   	
-    # Buat User
-  	CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';  
+# Buat User
+  CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';  
   	
-    # Berikan Hak Akses
-  	GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost';  
+# Berikan Hak Akses
+  GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost';  
+# Refresh Hak Akses
+  FLUSH PRIVILEGES;
   	
-    # Refresh Hak Akses
-  	FLUSH PRIVILEGES;
-  	
-    # Keluar
-  	exit 
+# Keluar
+  exit 
 
-    # Install & Konfigurasi WordPress
-    cd /tmp  
-   	wgt https://wordpress.org/latest.tar.gz 
+# Install & Konfigurasi WordPress
+cd /tmp  
+wgt https://wordpress.org/latest.tar.gz 
 
     # Extract WP
     tar -xzvf latesttar.gz 
