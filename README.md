@@ -35,14 +35,6 @@
     </ol>
       	
 **6. menu vlans;**
-
-
- 
-
-
-
-
-
 **7. Konfigurasi Proxmox**
     <ol type="1">
         <li>ketik di tab baru browser IP Proxmox</li>
@@ -68,10 +60,9 @@
     <ol type="1">
         <li>Masuk ke Ubuntu yang sudah dibuat</li>
         <li>klik Start lalu console</li>
-   
+    </ol>
     <dd>login : root</dd>
     <dd>password : (password yang sudah dibuat)</dd>
-    </ol>
     
     # Update Sistem & Install Apache, MySqlServer, PHPMyAdmin  
       apt update  
