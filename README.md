@@ -21,9 +21,9 @@
     ether 3  
 
 5. Konfigurasi Firewall
-    IP > Firewall > Nat > + > General = srcnat > Action =
-  	masquerade
-    DNS = Allow Remote Request
+    <dd>IP > Firewall > Nat > + > General = srcnat > Action =
+  	masquerade</dd>
+    <dd>DNS = Allow Remote Request</dd>
 
 6. Konfigurasi SWOS
     <ol type="1">
