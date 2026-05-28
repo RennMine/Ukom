@@ -26,11 +26,12 @@
     DNS = Allow Remote Request
 
 6. Konfigurasi SWOS
-    1.	Buka Browser  
-    2.	ketik 192.168.88.1  
-    3.	masuk SWOS jika tidak masuk pindahkan ip ether 2 ke          vlan 1  
-    4.	menu vlan > VLAN Mode enable port 1 - 4, Default
-        VLAN ID 1,10,20,30
+    <ol type="1">
+        <li>Buka Browswe</li> 
+        <li>ketik 192.168.88.1</li>
+        <li>masuk SWOS jika tidak masuk pindahkan ip ether 2 ke vlan 1</li>  
+        <li>menu vlan > VLAN Mode enable port 1 - 4, Default
+        VLAN ID 1,10,20,30</li>
       	
 5.	menu vlans;
 
