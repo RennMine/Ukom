@@ -67,12 +67,12 @@
 
     # Update Sistem & Install Apache, MySqlServer, PHPMyAdmin
     apt update
-    apt install apache2
-    apt install mysql-server
-    apt install php
-    apt install phpMyAdmin
+  	apt install apache2
+  	apt install mysql-server
+  	apt install php
+  	apt install phpMyAdmin 
 
-9.	Konfigurasi Database MySQL  Masuk ke konsol MySQL dan
+10.	Konfigurasi Database MySQL  Masuk ke konsol MySQL dan
     buat database serta pengguna baru untuk WordPress.  
     # Masuk ke MySQL
   	sudo mysql -u root -p
@@ -93,8 +93,8 @@
   	exit 
 
     # Install & Konfigurasi WordPress
-    cd /tmp 
-    wget https://wordpress.org/latest.tar.gz 
+    cd /tmp
+   	wget https://wordpress.org/latest.tar.gz 
 
     # Extract WP
     tar -xzvf latesttar.gz 
@@ -107,7 +107,7 @@
     Chmod -R 755 /var/www/html/wordpress
 
 
-11.	Masuk ke wordpress
+12.	Masuk ke wordpress
     Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/
     Lanjutkan installasi sampai bisa posting
 
