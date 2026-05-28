@@ -116,5 +116,5 @@
       Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/  
       Lanjutkan installasi sampai bisa posting
 
-%^&&$?&^@?$
+%#&&$?&#_@?$
 
