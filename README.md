@@ -100,7 +100,7 @@
 
     # Install & Konfigurasi WordPress  
       cd /tmp  
-      wgt https://wordpress.org/latest.tar.gz  
+      wget https://wordpress.org/latest.tar.gz  
 
     # Extract WP
       tar -xzvf latest.tar.gz  
@@ -109,12 +109,12 @@
       sudo mv wordpress /var/www/html/  
 
     # Merubah kepemilikan  
-      Chown -R www-data:www-data /var/www/html/wordpress/  
-   	  Chmod -R 755 /var/www/html/wordpress  
+      chown -R www-data:www-data /var/www/html/wordpress/  
+   	  chmod -R 755 /var/www/html/wordpress  
 
     # Masuk ke wordpress
       Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/  
       Lanjutkan installasi sampai bisa posting
 
-9#_X$@_!0*&%~?
+%^&&$?&^@?$
 
