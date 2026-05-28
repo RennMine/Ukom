@@ -70,17 +70,17 @@
         <li>Masuk ke Ubuntu yang sudah dibuat</li>
         <li>klik Start lalu console</li>
    
-    login : root
-    password : (password yang sudah dibuat)
+    <dd>login : root</dd>
+    <dd>password : (password yang sudah dibuat)</dd>
 
-  	# Update Sistem & Install Apache, MySqlServer, PHPMyAdmin
-    apt update  
-    apt install apache2  
-    apt install mysql-server  
-    apt install php  
-    apt install phpMyAdmin  
+# Update Sistem & Install Apache, MySqlServer, PHPMyAdmin
+apt update  
+apt install apache2  
+apt install mysql-server  
+apt install php  
+apt install phpMyAdmin  
 
-    # Masuk ke MySQL
+# Masuk ke MySQL
   	sudo mysql -u root -p  
   	
     # Buat Database
