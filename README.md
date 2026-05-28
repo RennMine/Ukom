@@ -73,16 +73,16 @@
     <dd>login : root</dd>
     <dd>password : (password yang sudah dibuat)</dd>
     </ol>
+    
+    # Update Sistem & Install Apache, MySqlServer, PHPMyAdmin  
+      apt update  
+      apt install apache2  
+      apt install mysql-server  
+      apt install php  
+      apt install phpMyAdmin  
 
-# Update Sistem & Install Apache, MySqlServer, PHPMyAdmin  
-  apt update  
-  apt install apache2  
-  apt install mysql-server  
-  apt install php  
-  apt install phpMyAdmin  
-
-# Masuk ke MySQL
-  sudo mysql -u root -p  
+    # Masuk ke MySQL
+      sudo mysql -u root -p  
   	
 # Buat Database
   CREATE DATABASE wordpress;  
