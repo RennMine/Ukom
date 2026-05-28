@@ -4,12 +4,10 @@
         <li>buat vlan di interface > vlan</li>  
     <dd>VLAN1 VLAN ID = 1</dd>
     <dd>VLAN10 VLAN ID = 10</dd>
-    VLAN20 VLAN ID = 20  
-    VLAN30 VLAN ID = 30  
-    </pre>
+    <dd>VLAN20 VLAN ID = 20</dd>
+    <dd>VLAN30 VLAN ID = 30</dd>  
 
-
-3. Konfigurasi IP
+2. Konfigurasi IP
     ether 2 = 192.168.88.254/24  
     vlan10 = 192.168.10.1/24  
     vlan20 = 192.168.20.1/24  
