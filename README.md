@@ -2,10 +2,13 @@
     <ol type="1">
         <li>dhcp client ether 1 (mendapatkan ip WAN)</li>
         <li>buat vlan di interface > vlan</li>  
-    VLAN1 VLAN ID = 1  
-    VLAN10 VLAN ID = 10  
-    VLAN20 VLAN ID = 20  
-    VLAN30 VLAN ID = 30  
+        <pre>
+            VLAN1 VLAN ID = 1  
+VLAN10 VLAN ID = 10  
+VLAN20 VLAN ID = 20  
+VLAN30 VLAN ID = 30  
+</pre>
+
 
 3. Konfigurasi IP
     ether 2 = 192.168.88.254/24  
