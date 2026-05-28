@@ -57,8 +57,8 @@
         254, Gateway= 192.168.10.1 next
     9.	DNS Server= 8.8.8.8 next
     10.	Finish, Tunggu hingga Task Ok
-
-8.	Install Apache, MySql, PHP
+        
+ 8. Install Apache, MySql, PHP
     1.	Masuk ke Ubuntu yang sudah dibuat
     2.	klik Start lalu console
 
@@ -72,19 +72,18 @@
     apt install php  
     apt install phpMyAdmin  
 
-10.	Konfigurasi Database MySQL  Masuk ke konsol MySQL dan
-    buat database serta pengguna baru untuk WordPress.  
+    # Konfigurasi Database MySQL  Masuk ke konsol MySQL dan buat database serta pengguna baru untuk WordPress.  
     # Masuk ke MySQL
-  	sudo mysql -u root -p
+  	sudo mysql -u root -p  
   	
     # Buat Database
-  	CREATE DATABASE wordpress;
+  	CREATE DATABASE wordpress;  
   	
     # Buat User
-  	CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+  	CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';  
   	
     # Berikan Hak Akses
-  	GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost';
+  	GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost';  
   	
     # Refresh Hak Akses
   	FLUSH PRIVILEGES;
@@ -107,7 +106,7 @@
    	Chmod -R 755 /var/www/html/wordpress
 
 
-12.	Masuk ke wordpress
+    # Masuk ke wordpress
     Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/
     Lanjutkan installasi sampai bisa posting
 
