@@ -1,6 +1,6 @@
 1. Konfigurasi MikroTik
     <ol type="1">
-    1. dhcp client ether 1 (mendapatkan ip WAN)
+    1. dhcp client ether 1 (mendapatkan ip WAN)  
     1. buat vlan di interface > vlan  
        VLAN1   VLAN ID = 1  
        VLAN10 VLAN ID = 10  
