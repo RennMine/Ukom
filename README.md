@@ -6,7 +6,7 @@
     <dd>VLAN10 VLAN ID = 10</dd>
     <dd>VLAN20 VLAN ID = 20</dd>
     <dd>VLAN30 VLAN ID = 30</dd>
-  
+    </ol>
 2. Konfigurasi IP
     ether 2 = 192.168.88.254/24  
     vlan10 = 192.168.10.1/24  
