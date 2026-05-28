@@ -72,7 +72,6 @@
     apt install php  
     apt install phpMyAdmin  
 
-    # Konfigurasi Database MySQL  Masuk ke konsol MySQL dan buat database serta pengguna baru untuk WordPress.  
     # Masuk ke MySQL
   	sudo mysql -u root -p  
   	
