@@ -1,30 +1,31 @@
 1. Konfigurasi MikroTik
-    1. dhcp client ether 1 (mendapatkan ip WAN)
+    <ol type="1">
+        <li></li>dhcp client ether 1 (mendapatkan ip WAN)<li></li>
     1. buat vlan di interface > vlan  
        VLAN1   VLAN ID = 1  
        VLAN10 VLAN ID = 10  
        VLAN20 VLAN ID = 20  
        VLAN30 VLAN ID = 30  
 
-2. Konfigurasi IP
+3. Konfigurasi IP
     ether 2 = 192.168.88.254/24  
     vlan10 = 192.168.10.1/24  
     vlan20 = 192.168.20.1/24  
     vlan30 = 192.168.30.1/24  
     ether 3 = 192.168.40.1/24  
 
-3. Konfigurasi DHCP Server
+4. Konfigurasi DHCP Server
     vlan10  
     vlan20  
     vlan30  
     ether 3  
 
-4. Konfigurasi Firewall
+5. Konfigurasi Firewall
     IP > Firewall > Nat > + > General = srcnat > Action =
   	masquerade
     DNS = Allow Remote Request
 
-5. Konfigurasi SWOS
+6. Konfigurasi SWOS
     1.	Buka Browser  
     2.	ketik 192.168.88.1  
     3.	masuk SWOS jika tidak masuk pindahkan ip ether 2 ke          vlan 1  
