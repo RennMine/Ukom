@@ -8,34 +8,32 @@
     <dd>VLAN30 VLAN ID = 30</dd>
     </ol>
 **2. Konfigurasi IP**
-    ether 2 = 192.168.88.254/24  
-    vlan10 = 192.168.10.1/24  
-    vlan20 = 192.168.20.1/24  
-    vlan30 = 192.168.30.1/24  
-    ether 3 = 192.168.40.1/24  
+&nbsp;&nbsp;&nbsp;&nbsp;ether 2 = 192.168.88.254/24  
+&nbsp;&nbsp;&nbsp;&nbsp;vlan10 = 192.168.10.1/24  
+&nbsp;&nbsp;&nbsp;&nbsp;vlan20 = 192.168.20.1/24  
+&nbsp;&nbsp;&nbsp;&nbsp;vlan30 = 192.168.30.1/24  
+&nbsp;&nbsp;&nbsp;&nbsp;ether 3 = 192.168.40.1/24  
 
 **3. Konfigurasi DHCP Server**
-    vlan10  
-    vlan20  
-    vlan30  
-    ether 3  
+&nbsp;&nbsp;&nbsp;&nbsp;vlan10  
+&nbsp;&nbsp;&nbsp;&nbsp;vlan20  
+&nbsp;&nbsp;&nbsp;&nbsp;vlan30  
+&nbsp;&nbsp;&nbsp;&nbsp;ether 3  
 
-**4. Konfigurasi Firewall**
-    <dd>IP > Firewall > Nat > + > General = srcnat > Action =
-  	masquerade</dd>
-    <dd>DNS = Allow Remote Request</dd>
+**4. Konfigurasi Firewall**  
+&nbsp;&nbsp;&nbsp;&nbsp;IP > Firewall > Nat > + > General = srcnat > Action = masquerade  
+&nbsp;&nbsp;&nbsp;&nbsp;DNS = Allow Remote Request
 
 **5. Konfigurasi SWOS**
     <ol type="1">
         <li>Buka Browswe</li> 
         <li>ketik 192.168.88.1</li>
-        <li>masuk SWOS jika tidak masuk pindahkan ip ether 2 ke vlan 1</li>  
-        <li>menu vlan > VLAN Mode enable port 1 - 4, Default
-        VLAN ID 1,10,20,30</li>
-    </ol>
-      	
-**6. menu vlans;**
-**7. Konfigurasi Proxmox**
+        <li>masuk SWOS jika tidak masuk pindahkan ip ether 2 ke vlan 1</li>
+        <li>menu vlan > VLAN Mode=enable port 1 - 4, Default VLAN ID=1,10,20,30</li>
+      	<li>menu vlans;</li>
+    </ol>  
+    
+**6. Konfigurasi Proxmox**
     <ol type="1">
         <li>ketik di tab baru browser IP Proxmox</li>
         <li>ketik 192.168.10.2:8006</li>
@@ -43,7 +41,7 @@
         <li>login.....</li>
     </ol>
 
-**8. Konfigurasi Ubuntu Server di Proxmox**
+**7. Konfigurasi Ubuntu Server di Proxmox**
     <ol type="1">
         <li>Klik menu Create CT</li>
         <li>isi host name=nama, dan password & confirm password, next</li>
@@ -57,7 +55,7 @@
         <li>Finish, Tunggu hingga Task Ok</li>
     </ol>
     
-**9. Install Apache, MySql, PHP**
+**8. Install Apache, MySql, PHP**
     <ol type="1">
         <li>Masuk ke Ubuntu yang sudah dibuat</li>
         <li>klik Start lalu console</li>  
@@ -104,8 +102,8 @@
    	  chmod -R 755 /var/www/html/wordpress  
 
     # Masuk ke wordpress
-  Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/  
-  Lanjutkan installasi sampai bisa posting
+  &nbsp;&nbsp;&nbsp;&nbsp;Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/  
+  &nbsp;&nbsp;&nbsp;&nbsp;Lanjutkan installasi sampai bisa posting
 
 **%#&&$?&#_@?$**
 
