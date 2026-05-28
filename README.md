@@ -72,6 +72,7 @@
    
     <dd>login : root</dd>
     <dd>password : (password yang sudah dibuat)</dd>
+    </ol>
 
 # Update Sistem & Install Apache, MySqlServer, PHPMyAdmin
 apt update  
