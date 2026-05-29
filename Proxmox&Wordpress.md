@@ -1,4 +1,4 @@
-**1. Konfigurasi MikroTik**  
+**1. Konfigurasi MikroTik**
     <ol type="1">
         <li>dhcp client ether 1 (mendapatkan ip WAN)</li>
         <li>buat vlan di interface > vlan</li>
