@@ -26,7 +26,7 @@
 
 **5. Konfigurasi SWOS**  
     <ol type="1">
-        <li>Buka Browswe</li> 
+        <li>Buka Browser</li> 
         <li>ketik 192.168.88.1</li>
         <li>masuk SWOS jika tidak masuk pindahkan ip ether 2 ke vlan 1</li>
         <li>menu vlan > VLAN Mode=enable port 1 - 4, Default VLAN ID=1,10,20,30</li>
