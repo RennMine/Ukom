@@ -31,6 +31,7 @@
         <li>masuk SWOS jika tidak masuk pindahkan ip ether 2 ke vlan 1</li>
         <li>menu vlan > VLAN Mode=enable port 1 - 4, Default VLAN ID=1,10,20,30</li>
       	<li>menu vlans;</li>
+        ![Swos](https://github.com/RennMine/Ukom/blob/main/Screenshot%202026-05-16%20160727.png)
     </ol>  
     
 **6. Konfigurasi Proxmox**  
