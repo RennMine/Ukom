@@ -63,45 +63,45 @@
 * Password: (Password yang sudah dibuat)
         </ol>
     
-    ### Update Sistem & Install Apache, MySqlServer, PHPMyAdmin  
+    ## Update Sistem & Install Apache, MySqlServer, PHPMyAdmin  
       apt update  
       apt install apache2  
       apt install mysql-server  
       apt install php  
       apt install phpMyAdmin  
 
-    ### Masuk ke MySQL
+    ## Masuk ke MySQL
       sudo mysql -u root -p  
   	
-    ### Buat Database
+    ## Buat Database
       CREATE DATABASE wordpress;  
   	
-    ### Buat User
+    ## Buat User
       CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';  
   	
-    ### Berikan Hak Akses
+    ## Berikan Hak Akses
       GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost';  
-    ### Refresh Hak Akses
+    ## Refresh Hak Akses
       FLUSH PRIVILEGES;
   	
-    ### Keluar
+    ## Keluar
       exit 
 
-    ### Install & Konfigurasi WordPress  
+    ## Install & Konfigurasi WordPress  
       cd /tmp  
       wget https://wordpress.org/latest.tar.gz  
 
-    ### Extract WP
+    ## Extract WP
       tar -xzvf latest.tar.gz  
 
-    ### Memindahkan Folder  
+    ## Memindahkan Folder  
       sudo mv wordpress /var/www/html/  
 
-    ### Merubah kepemilikan  
+    ## Merubah kepemilikan  
       chown -R www-data:www-data /var/www/html/wordpress/  
    	  chmod -R 755 /var/www/html/wordpress  
 
-    ### Masuk ke wordpress
+    ## Masuk ke wordpress
   &nbsp;&nbsp;&nbsp;&nbsp;Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/  
   &nbsp;&nbsp;&nbsp;&nbsp;Lanjutkan installasi sampai bisa posting
 
