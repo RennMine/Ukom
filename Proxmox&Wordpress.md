@@ -1,4 +1,4 @@
-**1. Konfigurasi MikroTik**
+**1. Konfigurasi MikroTik**  
     <ol type="1">
         <li>dhcp client ether 1 (mendapatkan ip WAN)</li>
         <li>buat vlan di interface > vlan</li>  
@@ -7,14 +7,14 @@
     <dd>VLAN20 VLAN ID = 20</dd>
     <dd>VLAN30 VLAN ID = 30</dd>
     </ol>
-**2. Konfigurasi IP**
+**2. Konfigurasi IP**  
 &nbsp;&nbsp;&nbsp;&nbsp;ether 2 = 192.168.88.254/24  
 &nbsp;&nbsp;&nbsp;&nbsp;vlan10 = 192.168.10.1/24  
 &nbsp;&nbsp;&nbsp;&nbsp;vlan20 = 192.168.20.1/24  
 &nbsp;&nbsp;&nbsp;&nbsp;vlan30 = 192.168.30.1/24  
 &nbsp;&nbsp;&nbsp;&nbsp;ether 3 = 192.168.40.1/24  
 
-**3. Konfigurasi DHCP Server**
+**3. Konfigurasi DHCP Server**  
 &nbsp;&nbsp;&nbsp;&nbsp;vlan10  
 &nbsp;&nbsp;&nbsp;&nbsp;vlan20  
 &nbsp;&nbsp;&nbsp;&nbsp;vlan30  
@@ -24,7 +24,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;IP > Firewall > Nat > + > General = srcnat > Action = masquerade  
 &nbsp;&nbsp;&nbsp;&nbsp;DNS = Allow Remote Request
 
-**5. Konfigurasi SWOS**
+**5. Konfigurasi SWOS**  
     <ol type="1">
         <li>Buka Browswe</li> 
         <li>ketik 192.168.88.1</li>
@@ -33,7 +33,7 @@
       	<li>menu vlans;</li>
     </ol>  
     
-**6. Konfigurasi Proxmox**
+**6. Konfigurasi Proxmox**  
     <ol type="1">
         <li>ketik di tab baru browser IP Proxmox</li>
         <li>ketik 192.168.10.2:8006</li>
@@ -41,7 +41,7 @@
         <li>login.....</li>
     </ol>
 
-**7. Konfigurasi Ubuntu Server di Proxmox**
+**7. Konfigurasi Ubuntu Server di Proxmox**  
     <ol type="1">
         <li>Klik menu Create CT</li>
         <li>isi host name=nama, dan password & confirm password, next</li>
@@ -55,7 +55,7 @@
         <li>Finish, Tunggu hingga Task Ok</li>
     </ol>
     
-**8. Install Apache, MySql, PHP**
+**8. Install Apache, MySql, PHP**  
     <ol type="1">
         <li>Masuk ke Ubuntu yang sudah dibuat</li>
         <li>klik Start lalu console</li>  
@@ -70,28 +70,28 @@
       apt install php  
       apt install phpMyAdmin  
 
-    ## Masuk ke MySQL
+    ## Masuk ke MySQL  
       sudo mysql -u root -p  
   	
-    ## Buat Database
+    ## Buat Database  
       CREATE DATABASE wordpress;  
   	
-    ## Buat User
+    ## Buat User  
       CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';  
   	
-    ## Berikan Hak Akses
+    ## Berikan Hak Akses  
       GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost';  
-    ## Refresh Hak Akses
+    ## Refresh Hak Akses  
       FLUSH PRIVILEGES;
   	
-    ## Keluar
+    ## Keluar  
       exit 
 
     ## Install & Konfigurasi WordPress  
       cd /tmp  
       wget https://wordpress.org/latest.tar.gz  
 
-    ## Extract WP
+    ## Extract WP  
       tar -xzvf latest.tar.gz  
 
     ## Memindahkan Folder  
@@ -101,7 +101,7 @@
       chown -R www-data:www-data /var/www/html/wordpress/  
    	  chmod -R 755 /var/www/html/wordpress  
 
-    ## Masuk ke wordpress
+    ## Masuk ke wordpress  
   &nbsp;&nbsp;&nbsp;&nbsp;Masukan ip yang dibuat di proxmox 192.168.10.x/wordpress/  
   &nbsp;&nbsp;&nbsp;&nbsp;Lanjutkan installasi sampai bisa posting
 
