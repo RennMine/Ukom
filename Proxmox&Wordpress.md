@@ -63,7 +63,7 @@
 * Password: (Password yang sudah dibuat)
         </ol>
     
-    ## Update Sistem & Install Apache, MySqlServer, PHPMyAdmin  
+    ## Update Sistem & Install Apache, MySql, PHP  
       apt update  
       apt install apache2  
       apt install mysql-server  
