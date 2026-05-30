@@ -69,7 +69,7 @@
       apt install apache2  
       apt install mysql-server  
       apt install php  
-      apt install phpMyAdmin  
+      apt install phpmyadmin  
 
     ## Masuk ke MySQL  
       sudo mysql -u root -p  
