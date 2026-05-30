@@ -1,3 +1,0 @@
-bash
-sudo apt update && sudo apt install -y apache2 mysql-server php phpmyadmin && sudo mysql -e "CREATE DATABASE wordpress; CREATE USER 'user'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost'; FLUSH PRIVILEGES;" && cd /tmp && wget https://wordpress.org/latest.tar.gz && tar -xzvf latest.tar.gz && sudo mv wordpress /var/www/html/ && sudo chown -R www-data:www-data /var/www/html/wordpress/ && sudo chmod -R 755 /var/www/html/wordpress
-
