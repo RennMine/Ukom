@@ -3,7 +3,7 @@
 ```bash
 sudo apt update && \
 sudo apt install -y apache2 mysql-server php phpmyadmin && \
-sudo mysql -e "CREATE DATABASE wordpress; CREATE USER 'user'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost'; FLUSH PRIVILEGES;" && \
+sudo mysql -e "CREATE DATABASE wordpress; CREATE USER 'user'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON wordpress.* TO 'user'@'localhost'; FLUSH PRIVILEGES; exit" && \
 cd /tmp && \
 wget https://wordpress.org && \
 tar -xzvf latest.tar.gz && \
